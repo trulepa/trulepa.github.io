@@ -1,4 +1,4 @@
 # trulepa.github.io
-my projects
-trulepa.github.io
-[Мой сайт](http://trulepa.github.io/mishka/index.html)
+my projects:
+
+1) [MISHKA](http://trulepa.github.io/mishka/index.html)

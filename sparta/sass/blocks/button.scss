@@ -1,0 +1,22 @@
+.button {
+  width: 307px;
+  height: 73px;
+  margin: 0;
+  padding: 0;
+  background-color: #ff0000;
+  background: url("../image/button-bg.png") no-repeat center center;
+  font-size: 18px;
+  line-height: 58px;
+  letter-spacing: 0.9px;
+  color: $white;
+  font-family: $CS-95_Black;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    background: url("../image/button-bg-hov.png") no-repeat center center;
+  }
+}

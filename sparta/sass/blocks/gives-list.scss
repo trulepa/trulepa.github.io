@@ -1,0 +1,140 @@
+.gives-list {
+  margin: 0;
+  list-style-type: none;
+}
+
+.gives-list__item {
+  position: relative;
+}
+
+.gives-list__number {
+  opacity: 0.15;
+  color: $white;
+  font-family: $Besom;
+  font-weight: 400;
+}
+
+.gives-list__title {
+  position: absolute;
+  margin: 0;
+  color: $white;
+  font-family: $CS-65_Bold;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.gives-list__description {
+  margin: 0;
+  color: $white;
+  font-family: $CS-45_Regular;
+  font-weight: 400;
+}
+
+@media (max-width: $mobile) {
+  .gives-list {
+    min-height: 694px;
+    width: 292px;
+    padding: 295px 24px 0 24px;
+    background: url("../image/gives-bg2_320.png") no-repeat top center, url("../image/gives-border_320.png") no-repeat top center;
+  }
+
+  .gives-list__item {
+    margin-bottom: 29px;
+  }
+
+  .gives-list__number {
+    font-size: 46px;
+    line-height: 46px;
+    letter-spacing: 3.6px;
+  }
+
+  .gives-list__title {
+    top: 16px;
+    left: 51px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 1.3px;
+  }
+
+  .gives-list__description {
+    margin: 4px 0 0 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .gives-list {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 370px;
+    width: 720px;
+    padding: 44px 24px 22px 306px;
+    background: url("../image/gives-bg2_750.png") no-repeat top left, url("../image/gives-border_750.png") no-repeat top center;
+  }
+
+  .gives-list__number {
+    font-size: 46px;
+    line-height: 46px;
+    letter-spacing: 3.6px;
+  }
+
+  .gives-list__title {
+    top: 16px;
+    left: 51px;
+    margin: 0;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 1.3px;
+  }
+
+  .gives-list__description {
+    margin: 4px 0 0 0;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .gives-list {
+    min-height: 340px;
+    width: 1140px;
+    padding: 58px 24px 0 480px;
+    background: url("../image/gives-bg2_1170.png") no-repeat top left, url("../image/gives-border_1170.png") no-repeat top center;
+  }
+
+  .gives-list__item {
+    width: 309px;
+    margin-bottom: 30px;
+
+    &:first-child {
+      width: 232px;
+    }
+
+    &:last-child {
+      width: 308px;
+      margin-left: 71px;
+    }
+  }
+
+  .gives-list__number {
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: 3.6px;
+  }
+
+  .gives-list__title {
+    position: static;
+    margin: 5px 0 16px 4px;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 1px;
+  }
+
+  .gives-list__description {
+    margin: 0 0 0 4px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

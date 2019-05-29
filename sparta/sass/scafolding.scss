@@ -1,0 +1,103 @@
+@font-face {
+  font-weight: normal;
+  font-family: "Besom";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/Besom.woff2") format("woff2"), url("../fonts/Besom.woff") format("woff");
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: "Core Sans E -35 Light";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/CoreSansE-35Light.woff2") format("woff2"), url("../fonts/CoreSansE-35Light.woff") format("woff");
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: "Core Sans E -35 Light It";
+  font-style: italic;
+  font-display: swap;
+  src: url("../fonts/CoreSansE-35LightIt.woff2") format("woff2"), url("../fonts/CoreSansE-35LightIt.woff") format("woff");
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: "Core Sans E -45 Regular";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/CoreSansE-45Regular.woff2") format("woff2"), url("../fonts/CoreSansE-45Regular.woff") format("woff");
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: "Core Sans E -55 Medium";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/CoreSansE-55Medium.woff2") format("woff2"), url("../fonts/CoreSansE-55Medium.woff") format("woff");
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: "Core Sans E -65 Bold";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/CoreSansE-65Bold.woff2") format("woff2"), url("../fonts/CoreSansE-65Bold.woff") format("woff");
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: "Core Sans E -85 Heavy";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/CoreSansE-85Heavy.woff2") format("woff2"), url("../fonts/CoreSansE-85Heavy.woff") format("woff");
+}
+
+@font-face {
+  font-weight: normal;
+  font-family: "Core Sans E -95 Black";
+  font-style: normal;
+  font-display: swap;
+  src: url("../fonts/CoreSansE-95Black.woff2") format("woff2"), url("../fonts/CoreSansE-95Black.woff") format("woff");
+}
+
+body {
+  margin: 0 auto;
+  min-width: 320px;
+  max-width: 1920px;
+  outline: 1px solid black;
+  font-style: normal;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

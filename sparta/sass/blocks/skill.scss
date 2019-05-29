@@ -1,0 +1,103 @@
+.skill {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.skill__text {
+  @extend %header-text;
+}
+
+.skill__title {
+  @extend %header-title;
+}
+
+@media (max-width: $mobile) {
+  .skill {
+    background: url("../../image/skill-bg_320.png") no-repeat, url("../../image/skill-txt_320.png") no-repeat, $white;
+    background-position: calc(((100% - 320px) / 2) + 11px) 138px, calc(((100% - 320px) / 2) + 18px) 255px;
+  }
+
+  .skil--container {
+    min-height: 951px;
+    padding-left: calc((100% - 320px) / 2);
+    padding-right: calc((100% - 320px) / 2);
+  }
+
+  .skill__text {
+    margin: 65px 0 0 15px;
+    width: 656px;
+    font-size: 100px;
+    line-height: 103px;
+    letter-spacing: 5px;
+  }
+
+  .skill__title {
+    top: 41px;
+    left: calc((100% - 274px) / 2);
+    width: 280px;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 1.8px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .skill {
+    background: url("../../image/skill-bg_750.png") no-repeat, url("../../image/skill-txt_750.png") no-repeat, url("../../image/skill-bg2_750.png") no-repeat, $white;
+    background-position: calc(((100% - 750px) / 2) + 279px) 168px, calc(((100% - 750px) / 2) + 215px) 265px, calc(((100% - 750px) / 2) + 35px) 336px;
+  }
+
+  .skil--container {
+    min-height: 940px;
+    padding-left: calc((100% - 750px) / 2);
+    padding-right: calc((100% - 750px) / 2);
+  }
+
+  .skill__text {
+    margin: 81px 0 0 11px;
+    width: 788px;
+    font-size: 120px;
+    line-height: 88px;
+    letter-spacing: 6px;
+  }
+
+  .skill__title {
+    top: 83px;
+    left: calc((100% - 654px) / 2);
+    width: 654px;
+    font-size: 48px;
+    letter-spacing: 2.4px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .skill {
+    background: url("../../image/skill-bg_750.png") no-repeat, url("../../image/skill-txt_750.png") no-repeat, url("../../image/skill-bg2_1170.png") no-repeat, $white;
+    background-position: calc(((100% - 1170px) / 2) + 654px) 271px, calc(((100% - 1170px) / 2) + 589px) 367px, calc(((100% - 1170px) / 2) + 75px) 210px;
+  }
+
+  .skil--container {
+    min-height: 1160px;
+    padding-left: calc((100% - 1170px) / 2);
+    padding-right: calc((100% - 1170px) / 2);
+  }
+
+  .skill__text {
+    margin: 140px 0 0 3px;
+    width: 1176px;
+    font-size: 180px;
+    line-height: 130px;
+    letter-spacing: 9px;
+  }
+
+  .skill__title {
+    top: 147px;
+    left: calc(((100% - 1170px) / 2) + 119px);
+    width: 934px;
+    font-size: 68px;
+    letter-spacing: 3.4px;
+  }
+}

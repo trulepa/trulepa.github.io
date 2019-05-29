@@ -1,0 +1,88 @@
+.what-to-do {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  background: $white;
+}
+
+.what-to-do__text {
+  @extend %header-text;
+}
+
+.what-to-do__title {
+  @extend %header-title;
+}
+
+@media (max-width: $mobile) {
+  .what-to-do--container {
+    padding-top: 61px;
+  }
+
+  .what-to-do__text {
+    width: 480px;
+    font-size: 100px;
+    line-height: 100px;
+    letter-spacing: 5px;
+    text-align: end;
+  }
+
+  .what-to-do__title {
+    top: 55px;
+    left: calc((100% - 272px) / 2);
+    width: 280px;
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 1.8px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .what-to-do--container {
+    width: 720px;
+    margin: 0 auto;
+    padding-top: 47px;
+  }
+
+  .what-to-do__text {
+    width: 560px;
+    font-size: 120px;
+    line-height: 120px;
+    letter-spacing: 6px;
+    text-align: end;
+  }
+
+  .what-to-do__title {
+    top: 77px;
+    left: calc((100% - 670px) / 2);
+    width: 674px;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: 2.4px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .what-to-do--container {
+    width: 1170px;
+    margin: 0 auto;
+    padding-top: 98px;
+  }
+
+  .what-to-do__text {
+    width: 846px;
+    font-size: 180px;
+    line-height: 180px;
+    letter-spacing: 9px;
+  }
+
+  .what-to-do__title {
+    top: 140px;
+    left: calc((100% - 957px) / 2);
+    width: 958px;
+    font-size: 68px;
+    line-height: 68px;
+    letter-spacing: 3.4px;
+  }
+}

@@ -1,0 +1,132 @@
+.gives {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gives__yes-title,
+.gives__yes-desktop {
+  position: absolute;
+  margin: 0;
+  color: $white;
+  font-family: $CS-95_Black;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.gives__yes-desktop {
+  display: none;
+}
+
+.gives__no-title {
+  color: #fefefe;
+  font-family: $CS-95_Black;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@media (max-width: $mobile) {
+  .gives {
+    background: url("../image/gives-bg_320.png") no-repeat top center;
+  }
+
+  .gives--container {
+    min-height: 1360px;
+    margin: 0;
+    padding-top: 128px;
+  }
+
+  .gives__yes-title {
+    margin: 69px 0 0 15px;
+    width: 234px;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 1.82px;
+  }
+
+  .gives__no-title {
+    width: 290px;
+    margin: 29px auto 0;
+    padding: 20px 30px 0 4px;
+    background: url("../image/will-not!_320.png") no-repeat;
+    background-position: 189px 7px;
+    font-size: 36px;
+    letter-spacing: 1.82px;
+    line-height: 43px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .gives {
+    background: url("../image/gives-bg_750.jpg") no-repeat top center;
+  }
+
+  .gives--container {
+    min-height: 990px;
+    margin: 0;
+    padding-top: 177px;
+    padding-left: calc((100% - 750px) / 2);
+    padding-right: calc((100% - 750px) / 2);
+  }
+
+  .gives__yes-title {
+    align-self: flex-start;
+    margin: 111px 0 0 47px;
+    width: 234px;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: 1.82px;
+  }
+
+  .gives__no-title {
+    position: absolute;
+    top: 545px;
+    left: calc((100% - 750px) / 2);
+    width: 360px;
+    margin: 0;
+    padding: 63px 0 35px 167px;
+    background: url("../image/will-not!_750.png") no-repeat;
+    background-position: -2px 36px;
+    font-size: 36px;
+    letter-spacing: 1.82px;
+    line-height: 43px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .gives {
+    background: url("../image/gives-bg_1170.png") no-repeat top center;
+  }
+
+  .gives--container {
+    min-height: 950px;
+    margin: 0;
+    padding-top: 207px;
+    padding-left: calc((100% - 1140px) / 2);
+    padding-right: calc((100% - 1140px) / 2);
+  }
+
+  .gives__yes-title {
+    display: none;
+  }
+
+  .gives__yes-desktop {
+    display: block;
+    top: 324px;
+    left: calc(((100% - 1140px) / 2) + 73px);
+    width: 280px;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 1.82px;
+  }
+
+  .gives__no-title {
+    position: absolute;
+    top: 583px;
+    left: calc((100% - 1160px) / 2);
+    background: url("../image/will-not!_750.png") no-repeat;
+    background-position: -2px 36px;
+  }
+}

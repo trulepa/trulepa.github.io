@@ -1,0 +1,19 @@
+.programm {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+.programm__text {
+  @extend %header-text;
+}
+
+.programm__title {
+  @extend %header-title;
+}
+
+@media (max-width: $mobile) {
+  
+}

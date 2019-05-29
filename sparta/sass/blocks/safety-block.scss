@@ -1,0 +1,125 @@
+.safety-block {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.safety-block__item {
+  display: flex;
+}
+
+.safety-block__number {
+  color: $white;
+  font-family: $CS-85_Heavy;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+
+.safety-block__description {
+  margin: 0;
+  color: $grey;
+  font-family: $CS-45_Regular;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@media (max-width: $mobile) {
+  .safety-block {
+    margin: 38px 0 0 0;
+    width: 290px;
+    background: url("../../image/city_320.png") no-repeat -2px 1px;
+  }
+
+  .safety-block__item {
+    flex-wrap: wrap;
+    padding-bottom: 57px;
+  }
+
+  .safety-block__number {
+    margin: 0 52px 0 15px;
+    line-height: 48px;
+  }
+
+  .safety-block__description {
+    width: 190px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .safety-block {
+    position: relative;
+    align-self: flex-start;
+    display: flex;
+    justify-content: space-between;
+    margin: 38px 0 0 0;
+    width: 1127px;
+    padding: 89px 0 0 20px;
+    background: url("../../image/city_750.png") no-repeat 12px 13px;
+  }
+
+  .safety-block__item {
+    width: 186px;
+
+    &:nth-child(1) {
+      order: 2;
+      position: relative;
+      left: -19px;
+
+      & > .safety-block__number {
+        top: -62px;
+        left: -198px;
+      }
+    }
+
+    &:nth-child(2) {
+      order: 3;
+
+      & > .safety-block__number {
+        top: 27px;
+        left: 245px;
+      }
+    }
+
+    &:nth-child(3) {
+      order: 4;
+
+      & > .safety-block__number {
+        top: 27px;
+        left: 495px;
+      }
+    }
+
+    &:nth-child(4) {
+      order: 5;
+      position: relative;
+      right: -58px;
+
+      & > .safety-block__number {
+        top: -62px;
+        left: -277px;
+      }
+    }
+
+    &:nth-child(5) {
+      order: 1;
+
+      & > .safety-block__number {
+        top: 27px;
+        left: 1012px;
+      }
+    }
+  }
+
+  .safety-block__number {
+    position: absolute;
+  }
+}
+
+@media (min-width: $desktop) {
+  .safety-block {
+    margin: 57px 0 0 16px;
+  }
+}
