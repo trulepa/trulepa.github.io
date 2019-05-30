@@ -18,19 +18,14 @@
 }
 
 .safety-block__description {
-  margin: 0;
-  color: $grey;
-  font-family: $CS-45_Regular;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
+  @extend %list-description;
 }
 
 @media (max-width: $mobile) {
   .safety-block {
     margin: 38px 0 0 0;
     width: 290px;
-    background: url("../../image/city_320.png") no-repeat -2px 1px;
+    background: url("../image/city_320.png") no-repeat -2px 1px;
   }
 
   .safety-block__item {
@@ -57,7 +52,7 @@
     margin: 38px 0 0 0;
     width: 1127px;
     padding: 89px 0 0 20px;
-    background: url("../../image/city_750.png") no-repeat 12px 13px;
+    background: url("../image/city_750.png") no-repeat 12px 13px;
   }
 
   .safety-block__item {

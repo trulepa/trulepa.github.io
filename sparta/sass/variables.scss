@@ -6,51 +6,18 @@ $desktop: 1170px;
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
 // fonts
-$Besom: "Besom",
-"Arial",
-"Helvetica CY",
-"Nimbus Sans L",
-sans-serif;
-$CS-35_Light: "Core Sans E -35 Light",
-"Arial",
-"Helvetica CY",
-"Nimbus Sans L",
-sans-serif;
-$CS-35_LightIt: "Core Sans E -35 Light It",
-"Arial",
-"Helvetica CY",
-"Nimbus Sans L",
-sans-serif;
-$CS-45_Regular: "Core Sans E -45 Regular",
-"Arial",
-"Helvetica CY",
-"Nimbus Sans L",
-sans-serif;
-$CS-55_Medium: "Core Sans E -55 Medium",
-"Arial",
-"Helvetica CY",
-"Nimbus Sans L",
-sans-serif;
-$CS-65_Bold: "Core Sans E -65 Bold",
-"Arial",
-"Helvetica CY",
-"Nimbus Sans L",
-sans-serif;
-$CS-85_Heavy: "Core Sans E -85 Heavy",
-"Arial",
-"Helvetica CY",
-"Nimbus Sans L",
-sans-serif;
-$CS-95_Black: "Core Sans E -95 Black",
-"Arial Black",
-"Helvetica CY",
-"Nimbus Sans L",
-sans-serif;
+$Besom: "Besom", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
+$CS-35_Light: "Core Sans E -35 Light", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
+$CS-35_LightIt: "Core Sans E -35 Light It", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
+$CS-45_Regular: "Core Sans E -45 Regular", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
+$CS-55_Medium: "Core Sans E -55 Medium", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
+$CS-65_Bold: "Core Sans E -65 Bold", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
+$CS-85_Heavy: "Core Sans E -85 Heavy", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
+$CS-95_Black: "Core Sans E -95 Black", "Arial Black", "Helvetica CY", "Nimbus Sans L", sans-serif;
 // colors
 $red: #ff0000;
 $white: #ffffff;
 $grey: #4d4d4d;
-
 // styles
 //@extend %header-text;
 %header-text {
@@ -61,7 +28,6 @@ $grey: #4d4d4d;
   text-align: center;
   text-transform: uppercase;
 }
-
 //@extend %header-title;
 %header-title {
   position: absolute;
@@ -71,5 +37,13 @@ $grey: #4d4d4d;
   color: $red;
   text-align: center;
   text-transform: uppercase;
-};
-//
+}
+//@extend %list-description;
+%list-description {
+  margin: 0;
+  color: $grey;
+  font-family: $CS-45_Regular;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}

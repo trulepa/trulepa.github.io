@@ -1,0 +1,70 @@
+.achievements-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.achievements-list__description {
+  @extend %list-description;
+}
+
+@media (max-width: $mobile) {
+  .achievements-list {
+    padding: 32px 14px 0 59px;
+    background: url("../image/instructor-bg_320.png") no-repeat -1px 38px, url("../image/instructor-bg_320.png") no-repeat -433px 350px;
+  }
+
+  .achievements-list__item {
+    margin-bottom: 24px;
+
+    &:nth-child(3) {
+      margin-bottom: 26px;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .achievements-list {
+    flex-wrap: wrap;
+    width: 100%;
+    height: 338px;
+    padding: 52px 14px 0 79px;
+    background: url("../image/instructor-bg_750.png") no-repeat 8px 57px;
+  }
+
+  .achievements-list__item {
+    &:nth-child(-n+3) {
+      width: 345px;
+      margin: 0 80px 24px 0;
+    }
+
+    &:nth-child(n+4) {
+      width: 230px;
+      margin: 9px 0 15px 0;
+    }
+  }
+
+  .achievements-list__description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .achievements-list {
+    width: 100%;
+    height: 316px;
+    padding: 35px 43px 0 408px;
+    background: url("../image/instructor-bg_1170.png") no-repeat 346px 40px;
+  }
+
+  .achievements-list__item {
+    &:nth-child(n+4) {
+      width: 230px;
+      margin: 1px 0 23px 0;
+    }
+  }
+}

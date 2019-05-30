@@ -14,6 +14,133 @@
   @extend %header-title;
 }
 
+.programm__tagline {
+  margin: 0;
+  color: $red;
+  font-family: $Besom;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 @media (max-width: $mobile) {
-  
+  .programm {
+    background: url("../image/programm-bg_320.png") no-repeat top center;
+  }
+
+  .programm--container {
+    min-height: 938px;
+    padding-left: calc((100% - 320px) / 2);
+    padding-right: calc((100% - 320px) / 2);
+  }
+
+  .programm__text {
+    margin: 40px 0 0 6px;
+    width: 448px;
+    font-size: 100px;
+    line-height: 103px;
+    letter-spacing: 5px;
+  }
+
+  .programm__title {
+    top: 33px;
+    left: calc((100% - 273px) / 2);
+    width: 280px;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 1.8px;
+  }
+
+  .programm__tagline {
+    margin: 25px 0 44px 4px;
+    width: 297px;
+    font-size: 54px;
+    line-height: 49.73px;
+    letter-spacing: 2.7px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .programm {
+    background: url("../image/programm-bg_750.png") no-repeat center 148px;
+  }
+
+  .programm--container {
+    min-height: 634px;
+    padding-left: calc((100% - 750px) / 2);
+    padding-right: calc((100% - 750px) / 2);
+  }
+
+  .programm__text {
+    margin: 21px 0 0 0;
+    width: 550px;
+    font-size: 120px;
+    line-height: 103px;
+    letter-spacing: 6px;
+  }
+
+  .programm__title {
+    top: 42px;
+    left: calc((100% - 681px) / 2);
+    width: 684px;
+    font-size: 48px;
+    line-height: 43px;
+    letter-spacing: 2.4px;
+  }
+
+  .programm__tagline {
+    align-self: flex-start;
+    margin: 33px 0 0 14px;
+    width: 328px;
+    font-size: 60px;
+    line-height: 56.73px;
+    letter-spacing: 3.1px;
+  }
+
+  .programm__btn {
+    position: absolute;
+    bottom: 61px;
+    right: calc((100% - 750px) / 2 + 57px);
+  }
+}
+
+@media (min-width: $desktop) {
+  .programm {
+    background: url("../image/programm-bg_1170.png") no-repeat center 217px;
+  }
+
+  .programm--container {
+    min-height: 1012px;
+    padding-left: calc((100% - 1140px) / 2);
+    padding-right: calc((100% - 1140px) / 2);
+  }
+
+  .programm__text {
+    margin: 34px 0 0 -10px;
+    width: 791px;
+    font-size: 180px;
+    line-height: 163px;
+    letter-spacing: 9px;
+  }
+
+  .programm__title {
+    top: 76px;
+    left: calc((100% - 961px) / 2);
+    width: 962px;
+    font-size: 68px;
+    line-height: 50px;
+    letter-spacing: 3.4px;
+  }
+
+  .programm__tagline {
+    margin: 43px 0 0 142px;
+    width: 480px;
+    font-size: 87px;
+    line-height: 56.73px;
+    letter-spacing: 4.5px;
+  }
+
+  .programm__btn {
+    bottom: 296px;
+    right: calc((100% - 1170px) / 2 + 185px);
+  }
 }

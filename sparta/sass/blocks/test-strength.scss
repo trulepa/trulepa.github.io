@@ -31,7 +31,7 @@
 @media (max-width: $mobile) {
   .test-strength {
     min-height: 510px;
-    background: url("../../image/test-strength-bg_320.jpg") no-repeat center center;
+    background: url("../image/test-strength-bg_320.jpg") no-repeat center center;
   }
 
   .test-strength__text {
@@ -57,7 +57,7 @@
 @media (min-width: $tablet) {
   .test-strength {
     height: 369px;
-    background: url("../../image/test-strength-bg_750.jpg") no-repeat center center;
+    background: url("../image/test-strength-bg_750.jpg") no-repeat center center;
   }
 
   .test-strength--container {

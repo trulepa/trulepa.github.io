@@ -25,12 +25,7 @@
 }
 
 .experience__description {
-  margin: 0;
-  color: $grey;
-  font-family: $CS-45_Regular;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
+  @extend %list-description;
 }
 
 @media (max-width: $mobile) {

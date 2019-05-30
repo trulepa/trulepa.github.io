@@ -10,12 +10,7 @@
 
 .skill-list__description {
   position: absolute;
-  margin: 0;
-  color: $grey;
-  font-family: $CS-45_Regular;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
+  @extend %list-description;
 }
 
 @media (max-width: $mobile) {
@@ -32,7 +27,7 @@
     &:nth-child(1) {
       position: relative;
 
-      &>.skill-list__description {
+      & > .skill-list__description {
         top: -5px;
         left: 91px;
         width: 126px;
@@ -67,7 +62,7 @@
     &:nth-child(2) {
       position: relative;
 
-      &>.skill-list__description {
+      & > .skill-list__description {
         top: -34px;
         left: 114px;
         width: 146px;
@@ -102,7 +97,7 @@
     &:nth-child(3) {
       position: relative;
 
-      &>.skill-list__description {
+      & > .skill-list__description {
         top: -64px;
         left: 127px;
         width: 179px;
@@ -137,7 +132,7 @@
     &:nth-child(4) {
       position: relative;
 
-      &>.skill-list__description {
+      & > .skill-list__description {
         top: -71px;
         left: 106px;
         width: 180px;
@@ -172,7 +167,7 @@
     &:nth-child(5) {
       position: relative;
 
-      &>.skill-list__description {
+      & > .skill-list__description {
         top: -96px;
         left: 73px;
         width: 232px;
@@ -220,7 +215,7 @@
     &:nth-child(1) {
       position: relative;
 
-      &>.skill-list__description {
+      & > .skill-list__description {
         top: 58px;
         left: 289px;
         width: 126px;
@@ -255,7 +250,7 @@
     &:nth-child(2) {
       position: relative;
 
-      &>.skill-list__description {
+      & > .skill-list__description {
         top: -18px;
         left: 385px;
         width: 201px;
@@ -290,7 +285,7 @@
     &:nth-child(3) {
       position: relative;
 
-      &>.skill-list__description {
+      & > .skill-list__description {
         top: -95px;
         left: 457px;
         width: 179px;
@@ -325,7 +320,7 @@
     &:nth-child(4) {
       position: relative;
 
-      &>.skill-list__description {
+      & > .skill-list__description {
         top: -138px;
         left: 507px;
         width: 220px;
@@ -360,7 +355,7 @@
     &:nth-child(5) {
       position: relative;
 
-      &>.skill-list__description {
+      & > .skill-list__description {
         top: -174px;
         left: 517px;
         width: 232px;

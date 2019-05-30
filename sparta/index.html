@@ -23,7 +23,6 @@
   <link rel="preload" href="fonts/CoreSansE-95Black.woff2" as="font" crossorigin="anonymous">
   <link rel="preload" href="fonts/CoreSansE-95Black.woff" as="font" crossorigin="anonymous">
 
-
   <script>
     // Picture element HTML5 shiv
     document.createElement("picture");
@@ -229,54 +228,120 @@
 
     </section>
 
-    <section class="programm">
+    <section class="programm programm--container">
 
-      <span class="programm__text"></span>
-      <h2 class="programm__title"></h2>
+      <span class="programm__text">Программа</span>
+      <h2 class="programm__title">в Программе спецкурса</h2>
       <ul class="programm-list">
-        <li>
-          <span>01</span>
-          <p>Военный альпинизм с минимальным набором снаряжения</p>
+        <li class="programm-list__item">
+          <span class="programm-list__number">01</span>
+          <p class="programm-list__description">Военный альпинизм с минимальным набором снаряжения</p>
         </li>
-        <li>
-          <span>02</span>
-          <p>Тактическая медицина</p>
+        <li class="programm-list__item">
+          <span class="programm-list__number">02</span>
+          <p class="programm-list__description">Тактическая медицина</p>
         </li>
-        <li>
-          <span>03</span>
-          <p>Разведение огня без спичек</p>
+        <li class="programm-list__item">
+          <span class="programm-list__number">03</span>
+          <p class="programm-list__description">Разведение огня без спичек</p>
         </li>
-        <li>
-          <span>04</span>
-          <p>Построение укрытий, долговременных и краткосрочных</p>
+        <li class="programm-list__item">
+          <span class="programm-list__number">04</span>
+          <p class="programm-list__description">Построение укрытий, долговременных и краткосрочных</p>
         </li>
-        <li>
-          <span>05</span>
-          <p>Блок по экипировке</p>
+        <li class="programm-list__item">
+          <span class="programm-list__number">05</span>
+          <p class="programm-list__description">Блок по экипировке</p>
         </li>
-        <li>
-          <span>06</span>
-          <p>Аварийно-спасательные работы</p>
+        <li class="programm-list__item">
+          <span class="programm-list__number">06</span>
+          <p class="programm-list__description">Аварийно-спасательные работы</p>
         </li>
-        <li>
-          <span>07</span>
-          <p>Первая помощь</p>
+        <li class="programm-list__item">
+          <span class="programm-list__number">07</span>
+          <p class="programm-list__description">Первая помощь</p>
         </li>
-        <li>
-          <span>08</span>
-          <p>Методы согрева и просушки одежды</p>
+        <li class="programm-list__item">
+          <span class="programm-list__number">08</span>
+          <p class="programm-list__description">Методы согрева и просушки одежды</p>
         </li>
-        <li>
-          <span>09</span>
-          <p>Поисково-спасательные работы</p>
+        <li class="programm-list__item">
+          <span class="programm-list__number">09</span>
+          <p class="programm-list__description">Поисково-спасательные работы</p>
         </li>
       </ul>
-      <p class="programm__tagline"></p>
-      <a href="#" class="button programm__btn"></a>
+      <p class="programm__tagline">Записаться и</p>
+      <a href="#" class="button programm__btn">Рискнуть</a>
 
     </section>
 
-    <section class="instructor"></section>
+    <div class="photo"></div>
+
+    <section class="instructor instructor--container">
+
+      <span class="instructor__text">Инструктор</span>
+      <h2 class="instructor__title">Инструктор</h2>
+      <picture class="instructor__photo">
+        <source media="(min-width: 1170px)" srcset="image/instructor-photo_1170.png">
+        <img src="image/instructor-photo_320.png" alt="instructor-photo">
+      </picture>
+      <span class="instructor__name">Роман Попков</span>
+      <ul class="achievements-list">
+        <li class="achievements-list__item">
+          <p class="achievements-list__description">Альпинист</p>
+        </li>
+        <li class="achievements-list__item">
+          <p class="achievements-list__description">
+            8 восхождений на Эльбрус (Западная
+            и&nbsp;Восточная вершины), восхождение
+            на&nbsp;Монблан. Неоднократно принимал участие&nbsp;в спасательных работах в горах. Спас двоих человек на вершине Эльбруса в снежную бурю
+          </p>
+        </li>
+        <li class="achievements-list__item">
+          <p class="achievements-list__description">Обучался у военных, горных и инструкторов по&nbsp;туризму</p>
+        </li>
+        <li class="achievements-list__item">
+          <p class="achievements-list__description">Обучался в центре подготовки спасателей</p>
+        </li>
+        <li class="achievements-list__item">
+          <p class="achievements-list__description">Инструктор по первой помощи
+            по&nbsp;программе Красного Креста</p>
+        </li>
+        <li class="achievements-list__item">
+          <p class="achievements-list__description">Обучение и подготовка в Центре&nbsp;медицины катастроф</p>
+        </li>
+        <li class="achievements-list__item">
+          <p class="achievements-list__description">Дайвер</p>
+        </li>
+      </ul>
+      <ul class="info-list">
+        <li class="info-list__item">
+          <span class="info-list__number">27</span>
+          <p class="info-list__description">Спарт провел в качестве капитана</p>
+        </li>
+        <li class="info-list__item">
+          <span class="info-list__number">28</span>
+          <p class="info-list__description">прыжков с веревкой (Rope Jumping)</p>
+        </li>
+        <li class="info-list__item">
+          <span class="info-list__number">05</span>
+          <p class="info-list__description">Спарт организовал (максимальный поток 68 чел.)</p>
+        </li>
+        <li class="info-list__item">
+          <span class="info-list__number">35</span>
+          <p class="info-list__description">боёв в Бойцовском Клубе</p>
+        </li>
+      </ul>
+
+    </section>
+
+    <section class="test-strength test-strength--container">
+
+      <span class="test-strength__text">испытай</span>
+      <h2 class="test-strength__title">себя на&nbsp;прочность</h2>
+      <a class="button test-strength__btn">Рискнуть</a>
+
+    </section>
 
     <section class="reviews"></section>
 

@@ -16,7 +16,7 @@
 
 @media (max-width: $mobile) {
   .skill {
-    background: url("../../image/skill-bg_320.png") no-repeat, url("../../image/skill-txt_320.png") no-repeat, $white;
+    background: url("../image/skill-bg_320.png") no-repeat, url("../image/skill-txt_320.png") no-repeat, $white;
     background-position: calc(((100% - 320px) / 2) + 11px) 138px, calc(((100% - 320px) / 2) + 18px) 255px;
   }
 
@@ -46,7 +46,7 @@
 
 @media (min-width: $tablet) {
   .skill {
-    background: url("../../image/skill-bg_750.png") no-repeat, url("../../image/skill-txt_750.png") no-repeat, url("../../image/skill-bg2_750.png") no-repeat, $white;
+    background: url("../image/skill-bg_750.png") no-repeat, url("../image/skill-txt_750.png") no-repeat, url("../image/skill-bg2_750.png") no-repeat, $white;
     background-position: calc(((100% - 750px) / 2) + 279px) 168px, calc(((100% - 750px) / 2) + 215px) 265px, calc(((100% - 750px) / 2) + 35px) 336px;
   }
 
@@ -75,7 +75,7 @@
 
 @media (min-width: $desktop) {
   .skill {
-    background: url("../../image/skill-bg_750.png") no-repeat, url("../../image/skill-txt_750.png") no-repeat, url("../../image/skill-bg2_1170.png") no-repeat, $white;
+    background: url("../image/skill-bg_750.png") no-repeat, url("../image/skill-txt_750.png") no-repeat, url("../image/skill-bg2_1170.png") no-repeat, $white;
     background-position: calc(((100% - 1170px) / 2) + 654px) 271px, calc(((100% - 1170px) / 2) + 589px) 367px, calc(((100% - 1170px) / 2) + 75px) 210px;
   }
 
